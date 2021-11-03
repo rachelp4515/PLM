@@ -1,0 +1,12 @@
+.card{
+    height: 400px;
+    width: 80vw;    
+}
+
+#cards{
+    width:150vw;
+    position: relative;
+    left: -100vw;
+    
+}
+

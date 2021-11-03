@@ -1,0 +1,18 @@
+.jumbotron{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.card{
+    padding: 200px;
+    margin: 150px;
+}
+.card:hover{
+    box-shadow: 5px 20px 55px #221d3a;
+}
+
+
+li{
+    font-size: large;
+    padding: 10px;
+    margin-top: 20px;
+}
