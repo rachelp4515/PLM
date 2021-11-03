@@ -15,69 +15,62 @@
         <!-- <header>
             <h2> My goal is to be able to connect an entire spotify playlist to a library and add custom tags to song</h2>
         </header> -->
-    <h2 class="text-center m-5">Main Features of PLM </h2>
-    <!-- <section id='cards'class='jumbotron d-flex my-5'> 
-        <div id='add-song' class='card bg-primary border-2 p-3 m-3'>
-            <h2 class='card-header'> Library </h2>
-            <p> Users will have the option to create their own library by adding songs through the form below or connect 
-                their spotify account and add songs to their library by adding previously made playlists to the 
-                library. When adding songs through the form, they can add tags to each song, or select multiple songs in the library 
-                and pin the tags on anything selected. 
-            </p>
-                <div>
-                    <form action=""></form>
-                </div>
-        </div>
-
-        <div id="custom-tag" class='card bg-primary border-2 p-3 m-3'>
-            <h2 class='card-header'> Custom tags </h2>
-            <p> Users can create custom tags to pin to their songs, or use the pre-made genre and mood tags. Users can add, 
-                edit, and delete any tag. Tags can be pinned either when adding songs to the library or by selecting songs and then 
-                choosing which tags to pin on them.  </p>
-        </div>
-
-        <div id="make-list" class='card bg-primary border-2 p-3 m-3'>
-            <h2 class='card-header'> Generating the playlist </h2>
-            <p> This is the main feature of the app. Users will be able to generate a playlist that can     be 
-                temporary or saved. To create the playlist, they select the tags they want their playlist to be based off of, 
-                then an amount of time or number of songs indicating how long they want the playlist to be. For example, 
-                let's say you have an hour long car ride coming up. You want some good rock jams, but specifically ones where 
-                the drums go dum-dum-da-dum-dum instead of da-dum-dum-da-dum-dum. Luckily, you made a tag for that, because God 
-                knows what music app would. You generate your playlist in just a few taps and go on your merry musical way. </p>
-        </div>
-    </section> -->
+    <h2 class="text-center m-5"> Main Features of PLM </h2>
+    
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <card id='add-song' class='card bg-primary border-2 p-3'>
-                    <h2 class='card-header'> Library </h2>
-                        <p> Users will have the option to create their own library by adding songs through the form below or connect 
+    <card id='add-song' class='card bg-primary border-2 p-3 mx-auto d-flex flex-row' >
+                    <div>
+                        <h2 class='card-header'> Library </h2>
+                        <p style= 'font-size: x-large;'> Users will have the option to create their own library by adding songs through the form below or connect 
                         their spotify account and add songs to their library by adding previously made playlists to the 
                         library. When adding songs through the form, they can add tags to each song, or select multiple songs in the library 
                         and pin the tags on anything selected. 
                         </p>
-                    <div>
-                        <form action=""></form>
+                    </div>
+                    <div >
+                        <form class='d-flex flex-column bg-dark'> 
+                            <label for="song" > Song </label> <input type="text" value="song name">
+                            
+                            <label for="artist"> Artist </label> <input type="text" value="artist name">
+                           
+                            <label for="album"> Album </label> <input type="text" value="album name">
+                           
+                            <label for="sDuration"> Song Duration </label> <input type="text" value="min:sec">
+                            <button>  + Add Tags </button>
+                        </form>
                     </div>
                 </card>
             </div>
           <div class="carousel-item">
-                <card id="custom-tag" class='card bg-primary border-2 p-3 '>
-                    <h2 class='card-header'> Custom tags </h2>
-                    <p> Users can create custom tags to pin to their songs, or use the pre-made genre and mood tags. Users can add, 
-                        edit, and delete any tag. Tags can be pinned either when adding songs to the library or by selecting songs and then 
-                        choosing which tags to pin on them.  </p>
+                <card id="custom-tag" class='card bg-primary border-2 p-3 mx-auto'>
+                    <div>
+                        <h2 class='card-header'> Custom tags </h2>
+                            <p style= 'font-size: x-large;'> Users can create custom tags to pin to their songs, or use the pre-made genre and mood tags. Users can add, 
+                                edit, and delete any tag. Tags can be pinned either when adding songs to the library or by selecting songs and then 
+                                choosing which tags to pin on them.  </p>
+                    </div> 
+                    <div class='d-flex justify-content-center align-items-center'>
+                        <button> New Tag </button>
+                        <i class="fas fa-angle-double-right fa-2x p-4 mt-3"></i>
+                        <form class='d-flex flex-column bg-dark'>
+                            <label for="name-tag">Name of Tag</label>
+                            <input type="text">
+                            <button id='tag-btn'> + Select songs to Pin this tag to </button>
+                        </form>
+                    </div>       
                 </card>
           </div>
           <div class="carousel-item">
-                <card id="make-list" class='card bg-primary border-2 p-3'>
+                <card id="make-list" class='card bg-primary border-2 p-3 mx-auto'>
                     <h2 class='card-header'> Generating the playlist </h2>
-                    <p> This is the main feature of the app. Users will be able to generate a playlist that can     be 
-                        temporary or saved. To create the playlist, they select the tags they want their playlist to be based off of, 
-                        then an amount of time or number of songs indicating how long they want the playlist to be. For example, 
-                        let's say you have an hour long car ride coming up. You want some good rock jams, but specifically ones where 
-                        the drums go dum-dum-da-dum-dum instead of da-dum-dum-da-dum-dum. Luckily, you made a tag for that, because God 
-                        knows what music app would. You generate your playlist in just a few taps and go on your merry musical way. </p>
+                        <p style= 'font-size: x-large;'> This is the main feature of the app. Users will be able to generate a playlist that can     be 
+                            temporary or saved. To create the playlist, they select the tags they want their playlist to be based off of, 
+                            then an amount of time or number of songs indicating how long they want the playlist to be. For example, 
+                            let's say you have an hour long car ride coming up. You want some good rock jams, but specifically ones where 
+                            the drums go <em class='text-dark'>dum-dum-da-dum-dum</em> instead of <em class='text-dark'>da-dum-dum-da-dum-dum</em>. Luckily, you made a tag for that, because God 
+                            knows what music app would. You generate your playlist in just a few taps and go on your merry musical way. </p>
                 </card>
           </div>
         </div>
@@ -91,10 +84,11 @@
         </a>
     </div>
     <section id='wireframes'> 
-            <h3 class='text-center m-5 p-5'>Still not enough? View my wire frames <a href="#"> here! </a></h3>
+            <h3 class='text-center m-5 p-5'> Still not enough? View my wire frames <a href="#"> here! </a></h3>
     </section>
-    <footer> </footer>
-
+    <footer class='m-5 text-center'>
+        <a href="https://www.instagram.com/probably.rae/"><i class="fab fa-instagram p-5 fa-3x"></i></a>  <a href="mailto:rachelp4515@gmail.com"><i class="fas fa-at p-5 fa-3x"></i></a>  <a href="https://github.com/rachelp4515"><i class="fab fa-github p-5 fa-3x"></i></a>  <a href="https://discord.com/users/2198"><i class="fab fa-discord p-5 fa-3x"></i></a> 
+    </footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
