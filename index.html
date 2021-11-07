@@ -14,17 +14,21 @@
 
 <!-- HEADER/NAV -->
 <nav class="navbar navbar-expand bg-primary">
-    <a class="navbar-brand" href="#">PLM</a>
+    
+    <a class="navbar-brand" href="#"><img src='PLM.png' style="width: 60px; background: white;"></a>
     <div class="navbar-nav">
-        <a class="nav-item nav-link c-danger" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Explore</a>
-        <a class="nav-item nav-link" href="#">Subscribe</a>
+        <a class="nav-item nav-link c-danger" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="explore.html">Explore</a>
+        <a class="nav-item nav-link" href="#subscribe">Subscribe</a>
+        <a class='nav-item nav-link' href="wireframes.html">Wireframes</a>
+
     </div>
 </nav>
 
 <!-- MAIN -->
-    <div class='jumbotron text-center bg-dark'> 
+    <div id='hero'class='jumbotron text-center bg-dark'> 
         <h1> PLM </h1>
+        <img src='PLM.png' id='rotate'>
         <p class='lead'>An app that lets you generate a playlist from your library based off any mood, event, or genre.<br>
         </p>
     </div>
@@ -42,7 +46,7 @@
 </div>
 
 <!-- Subscribe -->
-<div class="jumbotron text-center mb-0 bg-dark">
+<div id='subscribe' class="jumbotron text-center mb-0 bg-dark">
     <p class="lead mb-4">Subscribe to receive updates for the app</p>
     <div class="d-flex justify-content-center">
       <form action="#" class='form-inline'>
@@ -55,6 +59,6 @@
     <footer class='m-5 text-center'>
         <a href="https://www.instagram.com/probably.rae/"><i class="fab fa-instagram p-5 fa-3x"></i></a>  <a href="mailto:rachelp4515@gmail.com"><i class="fas fa-at p-5 fa-3x"></i></a>  <a href="https://github.com/rachelp4515"><i class="fab fa-github p-5 fa-3x"></i></a>  <a href="https://discord.com/users/2198"><i class="fab fa-discord p-5 fa-3x"></i></a> 
     </footer>
-
+<script src='script.js'></script>
 </body>
 </html>
